@@ -1,26 +1,19 @@
 *{
-    margin: 0;
-    padding: 0;
+    
     box-sizing: border-box;
+    margin: 0;
 }
-
-
-h1 {
-    text-align: center;
-}
-  
-
 
 header {
 	background-color: #ffd51cb0; /* fondo */
-    
+    text-align: center;
 	color: #000000; /* texto */
-    width: 100%;
+    width: auto;
     padding: 1rem;
 }
 
 
-nav {
+#navbar {
     background-color: #ffd51cb0; /* fondo */
 	color: #000000; /* texto */
     display: flex;
@@ -35,12 +28,18 @@ nav {
 .menu {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
 }
   
 .menu li {
-    margin-left: 50px;
+    margin-left: 1rem;
 }
 
+@media (max-width: 200px) {
+    #navbar {
+      display: none;
+    }
+}
 
 a {
     color: #000; /* color del texto del enlace */
@@ -58,20 +57,55 @@ a:hover {
     height: 500px;
 }
 
-#s1 {
-    border: 2px solid yellow;    
-    height: 500px;
-    padding-top: 4rem;
-}
 
-#s2 {
-    border: 2px solid red;    
-    height: 500px;
-    padding-top: 4rem;
-}
-
-  footer {
+footer {
     background-color: #ffd51cb0; /* fondo */
 	color: #000000; /* texto */
-    height: 100px;
-  }
+}
+
+
+
+#flex-container1{
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+    align-content: flex-start; /* Para contenedores multilinea */
+    gap: 1rem 1rem;
+    padding: 1rem;
+}
+
+#flex-container2{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height:auto;
+    align-content: flex-start; /* Para contenedores multilinea */
+    gap: 3rem 2rem;
+    padding: 1rem;
+} 
+
+  
+
+.flex-item{
+    border: 2px solid #000;
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem 0;
+}
+
+#contacto {
+    border: solid 2px blue;
+    text-align: center;
+
+}
+
+#copy{
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0;
+}
