@@ -2,19 +2,24 @@
     
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    font-family: 'Rock Salt', cursive;
 }
 
 header {
-	background-color: #ffd51cb0; /* fondo */
+	background-color: #05427d; /* fondo */
     text-align: center;
-	color: #000000; /* texto */
+	color: #a8b6d4; /* texto */
     width: auto;
     padding: 1rem;
 }
 
 
 #navbar {
-    background-color: #ffd51cb0; /* fondo */
+    background-color: #05417d7a; /* fondo */
 	color: #000000; /* texto */
     display: flex;
     position: sticky;
@@ -36,9 +41,12 @@ header {
     margin-left: 1rem;
 }
 
-@media (max-width: 200px) {
+@media (max-width: 300px) {
     #navbar {
       display: none;
+    }
+    iframe{
+        display: none;
     }
 }
 
@@ -66,7 +74,10 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 2px solid yellow;
+    background-image: url(../images/estadio.jpg);
+    background-size: cover;
+    background-position: center;
+    height: auto
 }
 
 #flex-container1 article{
@@ -83,6 +94,7 @@ a:hover {
     margin: 20px 0;
     border-radius: .5rem;
     transition: transform 0.2s ease-in-out;
+    border: #a8b6d4 solid;
 }
 
 article img:hover {
@@ -92,8 +104,8 @@ article img:hover {
 #flex-container1 article button{
     padding: .5rem;
     font-weight: bold;
-    border: 1px solid orange;
-    background-color: yellow;
+    border: solid #a8b6d4;
+    background-color: #a8b6d4;
     border-radius: 5px;
 }
 
@@ -104,9 +116,11 @@ article img:hover {
     border: 1px solid;
     height: 20rem;
     padding: 3rem 0;
+    background-color: #04203be7;
 }
 
-iframe {
+
+#calendario iframe {
     display: block;
     width: 100%;
     height: 100%;
@@ -118,23 +132,122 @@ iframe {
 #comprar{
     border: 2px solid violet;
     display: flex;
-    height: 20rem;
+    height: auto;
 }
+
+#comprar img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 500px;
+    padding: 2rem 0rem 2rem 0;
+
+
+}
+
+.form {
+    width: 50%;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    #comprar{
+        display: block;
+
+    }
+    .form{
+        width: auto;
+    }
+}
+
+.compra-input {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    margin: 1rem 0;
+    border: none;
+    box-shadow: 1px 0 5px 5px #366391b6;
+}
+
+.form button{
+    background-color: #05427d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration:solid;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;    
+}
+
+.form #sector{
+    height: 20px;
+    width: 40px;
+    border-radius: 100%;
+    margin: .5rem;
+}
+
+.form #cantidad{
+    display: block;
+    width: auto;
+    padding: .5rem;
+    margin: 1rem 0;
+    border: none;
+    box-shadow: 1px 0 5px 5px #366391b6;
+}
+
+  
+
 
 /*-----------------------SECTION 4 - contacto y mapa - borde azul-------------------------------- */
 #contacto {
-    border: solid 2px blue;
     text-align: center;
+    display: block;
+    background-image: url(../images/estadio2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding: 3rem;
 }
 
+#contacto iframe{
+    margin: rem;
+    width: auto;
+    height: auto;
+    border: #a8b6d4 solid .1rem;
+    border-radius: .3rem;
+}
 
+#contacto h2,h3{
+    padding: 1.5rem;
+    background-color: #032d57e3;
+    width: auto;
+    margin: 1rem;
+    color: aliceblue;
+    border-radius: .3rem;
+}
+
+#contacto a{
+    background-color: #a8b6d4;
+    padding: 0.5rem 3rem;
+    border-radius: .3rem;
+    
+}
 
 
 /*----------------------- FOOTER -------------------------------- */
 
 footer {
-    background-color: #ffd51cb0; /* fondo */
+    background-color: #05427d; /* fondo */
 	color: #000000; /* texto */
+    color: aliceblue;
 }
 
 #copy{

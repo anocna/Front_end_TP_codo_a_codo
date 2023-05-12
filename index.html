@@ -10,13 +10,26 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/43cb21788f.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+
+    <!--JS-->
+    <script src="./js/script.js"></script>
 
     <!--etiquetas semánticas -->
     <!--Header-->
     <header>
-        <h1>TPO Grupo4</h1>      
+        <h1>G4 ~ MUSIC ARG</h1>      
     </header>
 
 
@@ -28,8 +41,8 @@
         
         <ul class="menu">
           <li><a href="#comprar">Comprar</a></li>
-          <li><a href="#flex-container1">section1</a></li>
-          <li><a href="#calendario">section2</a></li>
+          <li><a href="#flex-container1">Shows</a></li>
+          <li><a href="#calendario">Proximos eventos</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -44,18 +57,36 @@
     <section id="flex-container1">
         <article>
             <img src="./images/cafres.jpg" alt="imagen">
-            <p>Los Cafres</p>
             <button><a href="#comprar">COMPRAR</a></button>
-          </article>
-          <article>
+        </article>
+         <article>
             <img src="./images/fito.jpg" alt="imagen">
-            <p>Fito Paez</p>
-            <button><a href="#comprar">COMPRAR</a></button>          </article>
-          <article>
+            <button><a href="#comprar">COMPRAR</a></button>          
+        </article>
+        <article>
             <img src="./images/soda.jpg" alt="imagen">
-            <p>Soda Stereo</p>
             <button><a href="#comprar">COMPRAR</a></button>
-          </article>
+        </article>
+        <article>
+            <img src="./images/babasonicos.jpg" alt="imagen">
+            <button><a href="#comprar">COMPRAR</a></button>
+        </article>
+        <article>
+            <img src="./images/pericos.jpg" alt="imagen">
+            <button><a href="#comprar">COMPRAR</a></button>
+        </article>
+        <article>
+            <img src="./images/bandalos.jpeg" alt="imagen">
+            <button><a href="#comprar">COMPRAR</a></button>
+        </article>
+        <article>
+            <img src="./images/luciano.jpg" alt="imagen">
+            <button><a href="#comprar">COMPRAR</a></button>
+        </article>
+        <article>
+            <img src="./images/cadillacs.jpg" alt="imagen">
+            <button><a href="#comprar">COMPRAR</a></button>
+        </article>
     </section>
 
 
@@ -66,19 +97,77 @@
     </section>
 
     <section id="comprar">
-        <h2>seccion para la Compra (FORMULARIO con iimagen de estadio)</h2>
+
+        <form action="./README.md" class="form">
+
+            <h2>COMPRAR ENTRADA</h2>
+
+            <label for="show">Seleccione el show</label>
+            <select name="show" id="show" class="compra-input">
+                <option value="cafres">Los Cafres</option>
+                <option value="fito" >Fito Paez</option>
+                <option value="soda">Soda Stereo</option>
+                <option value="soda">Babasonicos</option>
+                <option value="soda">Los Pericos</option>
+                <option value="soda">Bandalos Chinos</option>
+                <option value="soda">Luciano Pereira</option>
+                <option value="soda">Los Fabulosos Cadillacs</option>
+                <option value="" selected></option>
+            </select>
+
+            <label for="sector">Selecciona sector</label>
+
+            <input type="radio" name="sector" id="sector" value="platea" checked>Platea
+            <input type="radio" name="sector" id="sector" value="pullman">Pullman
+            <input type="radio" name="sector" id="sector" value="p_lat">Platea izquierda
+            <input type="radio" name="sector" id="sector" value="p_lat">Platea derecha
+
+            <label for="cantidad">Cantidad de entradas</label>
+            <input type="number" name="cantidad" id="cantidad" min="1" max="10">
+
+            <h3>TUS DATOS</h2>
+
+            <label for="nombre">Nombre(s): </label>
+            <input type="text" name="nombre" id="nombre" class="compra-input" required placeholder="Leandro">
+
+            <label for="apellido">Apellido(s): </label>
+            <input type="text" name="apellido" id="apellido" class="compra-input" required placeholder="Romano">
+
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" name="date" id="date"  class="compra-input" min="1950-01-01" max="2007-01-01">
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" class="compra-input" required placeholder="musicarg@codoacodo.com"> 
+            
+            <label for="comments">Dejanos un mensaje para tu banda favorita!!</label>
+            <textarea name="comments" id="" cols="30" rows="10" class="compra-input"></textarea>
+
+            <button type="submit">Continuar compra en email</button>
+        </form>
+        <img src="./images/sector.jpg" alt="sectores">
+
+        
     </section>
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <h4>Redes sociales</h4>
         <nav>
-            <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i>  YouTube</a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>  Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i>  Facebook</a>
+            <a href="http://wa.me/+5491164943764" target="_blank"><i class="fa-brands fa-whatsapp"></i>  WhatsApp</a>
         </nav>
-        <h2>iframe</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105111.09081513196!2d-58.46589849680314!3d-34.58591059999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbbb7c68078b%3A0xdc264e1614a96ae2!2sOficinas%20Codo%20a%20Codo(subsuelo)!5e0!3m2!1ses-419!2sar!4v1683047511296!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <nav id="sucursal">
+            <h2>Oficinas / Puntos de retiro</h2>
+            <h3><i class="fa-solid fa-map-location"></i>  CABA </h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105111.09081513196!2d-58.46589849680314!3d-34.58591059999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbbb7c68078b%3A0xdc264e1614a96ae2!2sOficinas%20Codo%20a%20Codo(subsuelo)!5e0!3m2!1ses-419!2sar!4v1683047511296!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3><i class="fa-solid fa-map-location"></i>  Zona SUR</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.5459904711465!2d-57.955884411145!3d-34.91784139999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e63069132591%3A0x4e4ecb97e8eb3c88!2sTeatro%20Argentino%20de%20La%20Plata!5e0!3m2!1ses-419!2sar!4v1683925591151!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3><i class="fa-solid fa-map-location"></i>  Zona OESTE </h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105027.97257912604!2d-58.76473188400272!3d-34.65156762530254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7672ec5a50d%3A0xba69bce6b86d6592!2sTeatro%20Mor%C3%B3n!5e0!3m2!1ses-419!2sar!4v1683925729933!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </nav>
+        
     </section>
 
     <footer>
