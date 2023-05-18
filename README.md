@@ -2,29 +2,12 @@ TO DO
 
 El TPO deberá cumplir con los siguientes requisitos:
 
-● Contener un formulario de contacto con validación realizada mediante Javascript.
+● Validación realizada mediante Javascript.
 Opcional: el formulario podrá enviar un email utilizando algún servicio externo
 destinado para ello.
 
-● Utilizar íconos de FontAwesome o Flaticon; y fuentes locales o
-bien de Google Fonts o similar.
-
-● Tener al menos una página totalmente responsive con 3 puntos de corte para 3
-tamaños de dispositivos distintos.
-
-● Incorporar al menos una animación, transformación o una transición (se deberá
-indicar en qué parte del sitio web fue incorporada la animación).
-(el carousel entraria aca?)
-
-● Poseer una estructura HTML maquetada con Flexbox y/o Grid. (Flexbox - section 1)
-
 ● Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al
 momento de entregar el TPO.
-
-● En caso de querer utilizar Bootstrap (no es obligatorio), sólo podrá hacerlo en la
-página del formulario del sitio web. No se aceptarán proyectos desarrollados
-íntegramente en algún Framework de CSS (Bootstrap, Materialize, Tailwind, etc.) o
-similar.
 
 ● El desarrollo web deberá subirse a un servidor on-line para poder ser navegada por
 el Instructor. Ejemplo: GitHub Pages, Netlify o similares.
