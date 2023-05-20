@@ -19,7 +19,7 @@ header {
 
 
 #navbar {
-    background-color: #05417d7a; /* fondo */
+    background-color: #0a39687a; /* fondo */
     display: flex;
     position: sticky;
     top: 0;    
@@ -49,7 +49,7 @@ header {
 }
 
 #navbar a {
-    color: #000000; /* color del texto del enlace */
+    color: #250c94; /* color del texto del enlace */
     text-decoration: none; /* eliminar subrayado por defecto */
     padding-left: 2rem;
     transition: color 0.3s ease;
