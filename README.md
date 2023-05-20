@@ -2,7 +2,8 @@ TO DO
 
 El TPO deberá cumplir con los siguientes requisitos:
 
-● Validación realizada mediante Javascript.
+● Validación realizada mediante Javascript. ( ok, mejorar...)
+
 Opcional: el formulario podrá enviar un email utilizando algún servicio externo
 destinado para ello.
 

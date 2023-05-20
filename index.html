@@ -28,9 +28,6 @@
 </head>
 <body>
 
-    <!--JS-->
-    <script src="./js/script.js"></script>
-
     <!--etiquetas semánticas -->
     <!--Header-->
     <header>
@@ -125,7 +122,7 @@
 
     <section id="comprar">
 
-        <form action="./README.md" class="form">
+        <form name="myForm" action="./README.md" onsubmit="return validateForm()" class="form">
 
             <h2>COMPRAR ENTRADA</h2>
 
@@ -155,16 +152,16 @@
             <h2>TUS DATOS</h2>
 
             <label for="nombre">Nombre(s): </label>
-            <input type="text" name="nombre" id="nombre" class="compra-input" required placeholder="Leandro">
+            <input type="text" name="nombre" id="nombre" class="compra-input" placeholder="Leandro" size="30" maxlength="100">
 
             <label for="apellido">Apellido(s): </label>
-            <input type="text" name="apellido" id="apellido" class="compra-input" required placeholder="Romano">
+            <input type="text" name="apellido" id="apellido" class="compra-input" placeholder="Romano">
 
             <label for="date">Fecha de nacimiento</label>
             <input type="date" name="date" id="date"  class="compra-input" min="1950-01-01" max="2007-01-01">
 
             <label for="email">Email: </label>
-            <input type="email" name="email" id="email" class="compra-input" required placeholder="musicarg@codoacodo.com"> 
+            <input type="email" name="email" id="email" class="compra-input" placeholder="musicarg@codoacodo.com"> 
             
             <label for="comments">Dejanos un mensaje para tu banda favorita!!</label>
             <textarea name="comments" id="" cols="30" rows="10" class="compra-input"></textarea>
@@ -206,7 +203,9 @@
 
     <!--Bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
+     
+    <!--JS-->
+    <script src="./js/script.js"></script>
 </body>
 </html>
 
