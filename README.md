@@ -5,7 +5,7 @@ El TPO deberá cumplir con los siguientes requisitos:
 ● Validación realizada mediante Javascript. ( ok, mejorar...)
 
 Opcional: el formulario podrá enviar un email utilizando algún servicio externo
-destinado para ello.
+destinado para ello. no.
 
 ● Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al
 momento de entregar el TPO.
