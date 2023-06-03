@@ -129,18 +129,57 @@ article img:hover {
 
 #calendario{
     border: 1px solid;
-    height: 20rem;
+    height: auto;
     padding: 3rem 0;
     background-color: #04203be7;
+    display: flex;
+
 }
 
 
 #calendario iframe {
-    display: block;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    margin: 1rem;
 }
+
+#weather-container {
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+
+  }
   
+  #location {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  #temperature {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #3010c0;
+  }
+  
+  #condition {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  #condition img {
+    margin-left: 10px;
+    width: auto;
+    height: auto;
+  }
+ 
 
 /*---------------- SECTION 3 - formulario para compra y subscripcion - borde violeta-------------------------------- */
 
